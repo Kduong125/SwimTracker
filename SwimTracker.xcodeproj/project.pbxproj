@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78E5CB13A0046B4B9BA51AF8 /* Pods_SwimTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 742C68B6F1893AD2672E6AFB /* Pods_SwimTracker.framework */; };
 		8E29447E253A56FA00E26773 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29447D253A56FA00E26773 /* AppDelegate.swift */; };
 		8E294480253A56FA00E26773 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E29447F253A56FA00E26773 /* SceneDelegate.swift */; };
-		8E294482253A56FA00E26773 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E294481253A56FA00E26773 /* ViewController.swift */; };
+		8E294482253A56FA00E26773 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E294481253A56FA00E26773 /* WelcomeViewController.swift */; };
 		8E294485253A56FA00E26773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E294483253A56FA00E26773 /* Main.storyboard */; };
 		8E294487253A56FC00E26773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E294486253A56FC00E26773 /* Assets.xcassets */; };
 		8E29448A253A56FC00E26773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E294488253A56FC00E26773 /* LaunchScreen.storyboard */; };
+		8E294494253CEA1600E26773 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E294493253CEA1600E26773 /* RegisterViewController.swift */; };
+		8E294496253CEA2F00E26773 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E294495253CEA2F00E26773 /* LoginViewController.swift */; };
+		8E294498253CEAE300E26773 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E294497253CEAE300E26773 /* Constants.swift */; };
+		8E6F5DF2253EBC2E00FB386D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F5DF1253EBC2E00FB386D /* FeedViewController.swift */; };
+		8E6F5DF5254386CB00FB386D /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F5DF4254386CB00FB386D /* Workouts.swift */; };
+		8E6F5DF725438FED00FB386D /* Sets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F5DF625438FED00FB386D /* Sets.swift */; };
+		8E6F5DF9254398FD00FB386D /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F5DF8254398FD00FB386D /* SwipeViewController.swift */; };
+		8E6F5DFB2543996700FB386D /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F5DFA2543996700FB386D /* SetsViewController.swift */; };
+		8E6F5DFD2543DDC100FB386D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F5DFC2543DDC000FB386D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		742C68B6F1893AD2672E6AFB /* Pods_SwimTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwimTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFB8572295AA7D84AA54C49 /* Pods-SwimTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimTracker.debug.xcconfig"; path = "Target Support Files/Pods-SwimTracker/Pods-SwimTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		8E29447A253A56FA00E26773 /* SwimTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E29447D253A56FA00E26773 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E29447F253A56FA00E26773 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E294481253A56FA00E26773 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E294481253A56FA00E26773 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		8E294484253A56FA00E26773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E294486253A56FC00E26773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E294489253A56FC00E26773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E29448B253A56FC00E26773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E294493253CEA1600E26773 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8E294495253CEA2F00E26773 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8E294497253CEAE300E26773 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8E6F5DF1253EBC2E00FB386D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8E6F5DF4254386CB00FB386D /* Workouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
+		8E6F5DF625438FED00FB386D /* Sets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sets.swift; sourceTree = "<group>"; };
+		8E6F5DF8254398FD00FB386D /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		8E6F5DFA2543996700FB386D /* SetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
+		8E6F5DFC2543DDC000FB386D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		981074C47C5CB9363BB38B26 /* Pods-SwimTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimTracker.release.xcconfig"; path = "Target Support Files/Pods-SwimTracker/Pods-SwimTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E5CB13A0046B4B9BA51AF8 /* Pods_SwimTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F2388A7E2CB7F085162A10B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				742C68B6F1893AD2672E6AFB /* Pods_SwimTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E294471253A56FA00E26773 = {
 			isa = PBXGroup;
 			children = (
 				8E29447C253A56FA00E26773 /* SwimTracker */,
 				8E29447B253A56FA00E26773 /* Products */,
+				FCAE953C264295D24C5A1C22 /* Pods */,
+				4F2388A7E2CB7F085162A10B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,57 @@
 		8E29447C253A56FA00E26773 /* SwimTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8E6F5DF3254386B800FB386D /* Models */,
 				8E29447D253A56FA00E26773 /* AppDelegate.swift */,
 				8E29447F253A56FA00E26773 /* SceneDelegate.swift */,
-				8E294481253A56FA00E26773 /* ViewController.swift */,
-				8E294483253A56FA00E26773 /* Main.storyboard */,
+				8E294491253C0B6A00E26773 /* Controllers */,
+				8E294492253C0B7C00E26773 /* View */,
 				8E294486253A56FC00E26773 /* Assets.xcassets */,
 				8E294488253A56FC00E26773 /* LaunchScreen.storyboard */,
 				8E29448B253A56FC00E26773 /* Info.plist */,
+				8E6F5DFC2543DDC000FB386D /* GoogleService-Info.plist */,
+				8E294497253CEAE300E26773 /* Constants.swift */,
 			);
 			path = SwimTracker;
+			sourceTree = "<group>";
+		};
+		8E294491253C0B6A00E26773 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E294481253A56FA00E26773 /* WelcomeViewController.swift */,
+				8E294493253CEA1600E26773 /* RegisterViewController.swift */,
+				8E294495253CEA2F00E26773 /* LoginViewController.swift */,
+				8E6F5DF1253EBC2E00FB386D /* FeedViewController.swift */,
+				8E6F5DFA2543996700FB386D /* SetsViewController.swift */,
+				8E6F5DF8254398FD00FB386D /* SwipeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8E294492253C0B7C00E26773 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E294483253A56FA00E26773 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E6F5DF3254386B800FB386D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F5DF4254386CB00FB386D /* Workouts.swift */,
+				8E6F5DF625438FED00FB386D /* Sets.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FCAE953C264295D24C5A1C22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB8572295AA7D84AA54C49 /* Pods-SwimTracker.debug.xcconfig */,
+				981074C47C5CB9363BB38B26 /* Pods-SwimTracker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E29448E253A56FC00E26773 /* Build configuration list for PBXNativeTarget "SwimTracker" */;
 			buildPhases = (
+				459905B8AA16755E39C43337 /* [CP] Check Pods Manifest.lock */,
 				8E294476253A56FA00E26773 /* Sources */,
 				8E294477253A56FA00E26773 /* Frameworks */,
 				8E294478253A56FA00E26773 /* Resources */,
+				51421695A08120ED23823D93 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E29448A253A56FC00E26773 /* LaunchScreen.storyboard in Resources */,
+				8E6F5DFD2543DDC100FB386D /* GoogleService-Info.plist in Resources */,
 				8E294487253A56FC00E26773 /* Assets.xcassets in Resources */,
 				8E294485253A56FA00E26773 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +211,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		459905B8AA16755E39C43337 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwimTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51421695A08120ED23823D93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwimTracker/Pods-SwimTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwimTracker/Pods-SwimTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwimTracker/Pods-SwimTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E294476253A56FA00E26773 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E294482253A56FA00E26773 /* ViewController.swift in Sources */,
+				8E294482253A56FA00E26773 /* WelcomeViewController.swift in Sources */,
 				8E29447E253A56FA00E26773 /* AppDelegate.swift in Sources */,
 				8E294480253A56FA00E26773 /* SceneDelegate.swift in Sources */,
+				8E6F5DF5254386CB00FB386D /* Workouts.swift in Sources */,
+				8E6F5DF2253EBC2E00FB386D /* FeedViewController.swift in Sources */,
+				8E6F5DF9254398FD00FB386D /* SwipeViewController.swift in Sources */,
+				8E294496253CEA2F00E26773 /* LoginViewController.swift in Sources */,
+				8E6F5DFB2543996700FB386D /* SetsViewController.swift in Sources */,
+				8E294494253CEA1600E26773 /* RegisterViewController.swift in Sources */,
+				8E6F5DF725438FED00FB386D /* Sets.swift in Sources */,
+				8E294498253CEAE300E26773 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		8E29448F253A56FC00E26773 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFB8572295AA7D84AA54C49 /* Pods-SwimTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +428,7 @@
 		};
 		8E294490253A56FC00E26773 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 981074C47C5CB9363BB38B26 /* Pods-SwimTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
