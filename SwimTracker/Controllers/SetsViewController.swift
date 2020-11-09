@@ -8,7 +8,7 @@
 
 import UIKit
 import RealmSwift
-import ChameleonFramework
+
 
 class SetsViewController: SwipeTableViewController {
     
@@ -25,6 +25,7 @@ class SetsViewController: SwipeTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+        navigationItem.title = selectedWorkout?.name
     }
     
 //    override func viewWillAppear(_ animated: Bool) {
@@ -87,8 +88,9 @@ class SetsViewController: SwipeTableViewController {
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
         var textField = UITextField()
-        let alert = UIAlertController(title: "Add New Todoey Item", message: "", preferredStyle: .alert)
-        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+        let alert = UIAlertController(title: "Add New Set", message: "", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let action = UIAlertAction(title: "Add Set", style: .default) { (action) in
             if let currentWorkout = self.selectedWorkout {
                 do {
                     try self.realm.write {
@@ -98,15 +100,16 @@ class SetsViewController: SwipeTableViewController {
                         currentWorkout.sets.append(newSet)
                     }
                 } catch {
-                    print("Error saving new items, \(error)")
+                    print("Error saving new sets, \(error)")
                 }
             }
             self.tableView.reloadData()
         }
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Create new item"
+            alertTextField.placeholder = "Create new set"
             textField = alertTextField
         }
+        alert.addAction(cancel)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
@@ -122,9 +125,10 @@ class SetsViewController: SwipeTableViewController {
             do {
                 try realm.write{
                     realm.delete(set)
+                    loadSets()
                 }
             } catch {
-                print("Error deleting item, \(error)")
+                print("Error deleting set, \(error)")
             }
         }
     }

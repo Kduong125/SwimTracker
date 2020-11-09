@@ -8,7 +8,7 @@
 
 import UIKit
 import RealmSwift
-import ChameleonFramework
+
 
 class FeedViewController: SwipeTableViewController {
     
@@ -21,17 +21,13 @@ class FeedViewController: SwipeTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadCategories()
+        loadWorkouts()
         tableView.separatorStyle = .none
-        
         
     }
     
         override func viewWillAppear(_ animated: Bool) {
-            guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
-            }
-            navBar.backgroundColor = UIColor(hexString: "#00BBFF")
-//            navBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Helvetica Neue", size: 30)!]
+            navigationItem.hidesBackButton = true
         }
     
     //Mark: - Tableview Datasource Methods
@@ -60,12 +56,12 @@ class FeedViewController: SwipeTableViewController {
                 realm.add(workout)
             }
         } catch {
-            print("Error saving category \(error)")
+            print("Error saving workout \(error)")
         }
         tableView.reloadData()
     }
     
-    func loadCategories() {
+    func loadWorkouts() {
         
         workouts = realm.objects(Workouts.self)
         tableView.reloadData()
@@ -77,6 +73,7 @@ class FeedViewController: SwipeTableViewController {
             do {
                 try self.realm.write {
                     self.realm.delete(workoutForDeletion)
+                    loadWorkouts()
                 }
             } catch {
                 print("Error deleting workout, \(error)")
@@ -88,14 +85,15 @@ class FeedViewController: SwipeTableViewController {
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
-                     let alert = UIAlertController(title: "Add a New Cateogry", message: "", preferredStyle: .alert)
+                     let alert = UIAlertController(title: "Add a New Workout", message: "", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
                      let action = UIAlertAction(title: "Add", style: .default) { (action) in
                          let newWorkout = Workouts()
                          newWorkout.name = textField.text!
                          //            newWorkout.colour = UIColor.randomFlat().hexValue()
                          self.save(workout: newWorkout)
                      }
-                     
+                     alert.addAction(cancel)
                      alert.addAction(action)
                      alert.addTextField { (field) in
                          textField = field
@@ -109,7 +107,10 @@ class FeedViewController: SwipeTableViewController {
     //Mark: - Tableview Delegate Methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToSets", sender: self)
+        tableView.deselectRow(at: indexPath, animated: false)
     }
+    
+   
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! SetsViewController
