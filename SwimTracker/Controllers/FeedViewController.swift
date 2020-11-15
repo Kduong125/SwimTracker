@@ -8,7 +8,7 @@
 
 import UIKit
 import RealmSwift
-
+import Firebase
 
 class FeedViewController: SwipeTableViewController {
     
@@ -20,12 +20,19 @@ class FeedViewController: SwipeTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        showApp()
+        guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")}
+               navBar.backgroundColor = UIColor(named: BrandColors.lightBlue)
+        navBar.prefersLargeTitles = true
         loadWorkouts()
         tableView.separatorStyle = .none
         
     }
-    
+//    func showApp() {
+//    if Auth.auth().currentUser == nil {
+//        performSegue(withIdentifier: K.loginNeeded, sender: self)
+//        }
+//    }
         override func viewWillAppear(_ animated: Bool) {
             navigationItem.hidesBackButton = true
         }

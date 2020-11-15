@@ -2,10 +2,11 @@
 
 struct K {
     static let appName = "SwimTracker"
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
+//    static let cellIdentifier = "ReusableCell"
+//    static let cellNibName = "MessageCell"
     static let registerSegue = "RegisterToWorkouts"
     static let loginSegue = "LoginToWorkouts"
+    static let loginNeeded = "goToLogin"
 }
     struct BrandColors {
         static let magenta = "Magenta"

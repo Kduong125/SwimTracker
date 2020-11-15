@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class WelcomeViewController: UIViewController {
 
@@ -16,8 +17,8 @@ class WelcomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
        guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")}
         navBar.backgroundColor = UIColor(named: BrandColors.lightBlue)
+//        showApp()
     }
 
-
-}
+    }
 

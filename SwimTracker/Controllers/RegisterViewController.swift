@@ -33,10 +33,12 @@ class RegisterViewController: UIViewController {
                     if password.count < 6 {
                         self.errorLabel.text = "Password must be 6 characters or more"
                     } else {
-                    self.errorLabel.text = "Sign up failed, please enter a valid email."
+                        self.errorLabel.text = "Sign up failed, please enter a valid email."
                     }
                 } else {
-                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let mainTabBarController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController")
+                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
                 }
             }
         }
