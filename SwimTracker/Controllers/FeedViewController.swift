@@ -13,10 +13,9 @@ import Firebase
 class FeedViewController: SwipeTableViewController {
     
     let realm = try! Realm()
-    
-    // Potential namespace clash with OpaquePointer (same name of Category)
-    // Use correct type from dropdown or add backticks to fix e.g., var categories = [`Category`]()
     var workouts: Results<Workouts>?
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +24,6 @@ class FeedViewController: SwipeTableViewController {
                navBar.backgroundColor = UIColor(named: BrandColors.lightBlue)
         navBar.prefersLargeTitles = true
         loadWorkouts()
-        tableView.separatorStyle = .none
         
     }
 //    func showApp() {
