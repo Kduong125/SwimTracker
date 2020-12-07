@@ -28,24 +28,7 @@ class SetsViewController: SwipeTableViewController {
         navigationItem.title = selectedWorkout?.name
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//
-//      if let colourHex = selectedWorkout?.colour {
-//          title = selectedWorkout!.name
-//            guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
-//            }
-//           if let navBarColour = UIColor(hexString: colourHex) {
-//                //Original setting: navBar.barTintColor = UIColor(hexString: colourHex)
-//                //Revised for iOS13 w/ Prefer Large Titles setting:
-//               navBar.backgroundColor = navBarColour
-//               navBar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
-//                navBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : ContrastColorOf(navBarColour, returnFlat: true)]
-//                searchBar.barTintColor = navBarColour
-//            }
-//       }
-// }
-    
-    //Mark - Tableview Datasource Methods
+    //MARK: - Tableview Datasource Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sets?.count ?? 1
     }
@@ -134,8 +117,24 @@ class SetsViewController: SwipeTableViewController {
     }
 }
 
+//    override func viewWillAppear(_ animated: Bool) {
+//
+//      if let colourHex = selectedWorkout?.colour {
+//          title = selectedWorkout!.name
+//            guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
+//            }
+//           if let navBarColour = UIColor(hexString: colourHex) {
+//                //Original setting: navBar.barTintColor = UIColor(hexString: colourHex)
+//                //Revised for iOS13 w/ Prefer Large Titles setting:
+//               navBar.backgroundColor = navBarColour
+//               navBar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
+//                navBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : ContrastColorOf(navBarColour, returnFlat: true)]
+//                searchBar.barTintColor = navBarColour
+//            }
+//       }
+// }
 
-//Mark: - Searchbar delegate methods
+//MARK: - Searchbar delegate methods
 extension SetsViewController: UISearchBarDelegate{
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

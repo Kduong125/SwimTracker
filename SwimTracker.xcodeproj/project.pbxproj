@@ -23,6 +23,7 @@
 		8E6F5DF9254398FD00FB386D /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F5DF8254398FD00FB386D /* SwipeViewController.swift */; };
 		8E6F5DFB2543996700FB386D /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F5DFA2543996700FB386D /* SetsViewController.swift */; };
 		8E6F5DFD2543DDC100FB386D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F5DFC2543DDC000FB386D /* GoogleService-Info.plist */; };
+		8EAB50DD25679C5700B84F96 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAB50DC25679C5700B84F96 /* WorkoutCell.swift */; };
 		8EB1FA382561F71400168D98 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1FA372561F71400168D98 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		8E6F5DF8254398FD00FB386D /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 		8E6F5DFA2543996700FB386D /* SetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
 		8E6F5DFC2543DDC000FB386D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8EAB50DC25679C5700B84F96 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		8EB1FA372561F71400168D98 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		981074C47C5CB9363BB38B26 /* Pods-SwimTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimTracker.release.xcconfig"; path = "Target Support Files/Pods-SwimTracker/Pods-SwimTracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,6 +117,7 @@
 				8E6F5DFA2543996700FB386D /* SetsViewController.swift */,
 				8E6F5DF8254398FD00FB386D /* SwipeViewController.swift */,
 				8EB1FA372561F71400168D98 /* SettingsViewController.swift */,
+				8EAB50DC25679C5700B84F96 /* WorkoutCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -156,7 +159,7 @@
 				8E294476253A56FA00E26773 /* Sources */,
 				8E294477253A56FA00E26773 /* Frameworks */,
 				8E294478253A56FA00E26773 /* Resources */,
-				51421695A08120ED23823D93 /* [CP] Embed Pods Frameworks */,
+				A582546E61E81736C95AF1E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,7 +240,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		51421695A08120ED23823D93 /* [CP] Embed Pods Frameworks */ = {
+		A582546E61E81736C95AF1E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E294482253A56FA00E26773 /* WelcomeViewController.swift in Sources */,
+				8EAB50DD25679C5700B84F96 /* WorkoutCell.swift in Sources */,
 				8E29447E253A56FA00E26773 /* AppDelegate.swift in Sources */,
 				8E294480253A56FA00E26773 /* SceneDelegate.swift in Sources */,
 				8E6F5DF5254386CB00FB386D /* Workouts.swift in Sources */,
